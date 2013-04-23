@@ -161,10 +161,7 @@ public class AppWidgetSmall extends AppWidgetProvider {
 		
 		Bitmap bitmap = customWidget.MakeCover(cover,curSkin,data.getUkuran());
 		
-		cover.recycle();
-		System.gc();
-
-		// Set the titles and artwork
+	// Set the titles and artwork
 		appWidgetView.setTextViewText(R.id.app_widget_small_line_one, trackName);
 		appWidgetView.setTextViewText(R.id.app_widget_small_line_two,	artistName);
 		
